@@ -2,6 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/063261b0-8158-4447-be50-d5482a2eabd3)
 
+---
 ## I . INTROCDUTION:
 
 The company is called "TechStream Solutions", and the product is a Software as a Service (SaaS) platform named "Streamline Pro". This platform provides comprehensive project management and collaboration tools for businesses of all sizes.
