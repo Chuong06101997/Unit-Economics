@@ -57,6 +57,7 @@ expense_mar = monthly_expense[monthly_expense['month'] == '2023-03-01']
 expense_crm = expense_mar[expense_mar['item'] == 'Salesforce']['amount'].sum()
 ```
 > The cost of the Marketing Software Expense is $1,700.
+> In March 2023, we extracted the Marketing Software Expense by filtering for the item "Salesforce", which totaled $5,950. This amount is included in the total marketing cost used to calculate the Customer Acquisition Cost (CAC).
 
 ### 1.2 Sales & Marketing Salaries
 ```
@@ -70,6 +71,42 @@ sale_marketing_salary = pay_roll_202303[
     (pay_roll['department'] == 'Marketing')
 ]['paid'].sum()
 ```
-> The cost of Sales & Marketing Salaries is $5,950
+> The cost of Sales & Marketing Salaries is $5,950.
+> In March 2023, the total amount paid to employees in the Sales and Marketing departments was $5,950. This value represents the Sales & Marketing Salaries, and is included in the total expense used to calculate Customer Acquisition Cost (CAC).
+
+### 1.3 Daily Marketing Expense
+```
+daily_marketing.sample(5)
+```
+![image](https://github.com/user-attachments/assets/017335a9-31aa-4fcc-a607-b6270c0df0ca)
+
+```
+daily_marketing_202303 = daily_marketing[(daily_marketing['date'] >= '2023-03-01') & (daily_marketing['date'] <= '2023-03-31')]
+daily_marketing_expense = daily_marketing_202303['spending'].sum()
+```
+> The cost of the Daily Marketing Expense is $68,830.
+> In March 2023, the total Daily Marketing Expense amounted to $68,830. This value is included in the total marketing cost for calculating the Customer Acquisition Cost (CAC).
+
+### 1.4 Number of New Customer
+```
+customer_recepts.sample(5)
+```
+![image](https://github.com/user-attachments/assets/85474fa0-a856-494d-81f1-9d2fe8e67de5)
+
+```
+customer_recepts_202303 = customer_recepts[(customer_recepts['date'] >= '2023-03-01') & (customer_recepts['date'] <= '2023-03-31')]
+new_of_customer = customer_recepts_202303[customer_recepts_202303['new_customer'] == 1]['customer_id'].nunique()
+```
+>The number of new customers is 63.
+### 1.5 CAC calculation
+```
+total_acquition_cost = crm_expense + sale_marketing_salary + daily_marketing_expense
+cac = round(total_acquition_cost/ new_of_customer, 2)
+```
+>The Customer Acquisition Cost (CAC) is $1,213.97.
+-> This means that, on average, it costs $1,213.97 to acquire one new customer.
+We should consider: Is the value and long-term revenue from each new customer worth this cost?
+
+
 
 
