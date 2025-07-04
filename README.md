@@ -155,11 +155,47 @@ production_salary = pay_roll_202303[pay_roll_202303['department'] == 'Engineerin
 Total : `5200`
 
 COGS Calculation:
-`cogs = softwware_expense + share_softwware + production_salary`
 ```
+cogs = softwware_expense + share_softwware + production_salary
+```
+
 Total : `20264.0`
+>The total COGS (Cost of Goods Sold) for March 2023 is $20,264.00, representing the direct production costs required to deliver the product or service.
 
+### 4. Gross margin
+`Gross Margin = ([Revenue - COGS) / Revenue) * 100`
+```
+gross_margin = round((total_revenue - cogs) / total_revenue * 100, 2)
+```
+Total: `75.6`
+The Gross Margin for March 2023 is `75.6%`, indicating that the business retains 75.6% of its revenue after covering direct production costs (COGS).
 
+### 5. LTV: Customer Lifetime Value
+LTV = ARPU * [Customer Lifespan] * Gross Margin
+```
+lifespan.sample(5)
+```
+![image](https://github.com/user-attachments/assets/1f98340c-c70f-49ed-a70a-6ccadf2e7cfe)
 
+```
+lifespan['lifespan_days'] = pd.to_datetime(lifespan['churn_date']) - pd.to_datetime(lifespan['start_date'])
+lifespan['lifespan_days'] = lifespan['lifespan_days'].dt.days
+lifespan.sample(5)
+```
 
+![image](https://github.com/user-attachments/assets/c16739e9-d77b-48ac-a985-4d6c1a5341ec)
 
+```
+avg_lifespan_month = lifespan['lifespan_days'].mean() / 30
+avg_lifespan_month
+```
+Total:`9.841333333333333`
+
+> Based on the average ARPU, customer lifespan, and gross margin, we estimate the Customer Lifetime Value (LTV) to be approximately $2,115.65. This is a key metric for evaluating the effectiveness of investments in customer acquisition and retention.
+
+### 5.  LTV / CAC
+
+``` ltv_cac = ltv / cac```
+Total:`1.7427548038913647`
+
+>The LTV/CAC ratio is approximately 1.74, indicating that for every $1 spent on acquiring a customer, the business earns about $1.74 in customer lifetime value. This suggests moderate profitability, but there may be room to improve marketing efficiency or increase customer value.
