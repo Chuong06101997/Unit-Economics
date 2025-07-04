@@ -1,4 +1,4 @@
-# TechStream Solutions
+# TECHSTREAM SOLUTIONS
 
 ![image](https://github.com/user-attachments/assets/063261b0-8158-4447-be50-d5482a2eabd3)
 
