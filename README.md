@@ -15,9 +15,15 @@ II. IMPORT
 ```
 import pandas as pd
 ```
-Data Monthly_expense
+
 ```
+# Data Monthly_expense
 google_sheet_id = '10OGbaywwMIqKgnPGy8VDvpBVtjyqln47iYa2lFhI9Mw'
 url = 'https://docs.google.com/spreadsheets/d/' + google_sheet_id + '/export?format=xlsx'
 month_expense = pd.read_excel(url, sheet_name='Sheet1')
+---
+Data payroll
+google_sheet_id = '1c_WihqTZCQvNgxzmd-OwhR9i5diwtfxXVLyMn8R-Lp4'
+url = 'https://docs.google.com/spreadsheets/d/' + google_sheet_id + '/export?format=xlsx'
+pay_roll = pd.read_excel(url, sheet_name='Sheet1')
 ```
