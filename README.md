@@ -34,6 +34,12 @@ google_sheet_id = '1AZOIThOV4P-0eYDge53ZwumVkfkHoYPWxst3k3Bv87c'
 url = 'https://docs.google.com/spreadsheets/d/' + google_sheet_id + '/export?format=xlsx'
 daily_marketing = pd.read_excel(url, sheet_name='Sheet1')
 ```
+Data `customer_lifespan_data`
+```
+google_sheet_id = '1by8tPHwOnq3uKYK2E7sA9VBUYoPM4p1Rnrm_Ss9cyHI'
+url = 'https://docs.google.com/spreadsheets/d/' + google_sheet_id + '/export?format=xlsx'
+lifespan = pd.read_excel(url, sheet_name='Sheet1')
+```
 
 
 
