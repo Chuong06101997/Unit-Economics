@@ -60,6 +60,11 @@ expense_crm = expense_mar[expense_mar['item'] == 'Salesforce']['amount'].sum()
 
 ### 1.2 Sales & Marketing Salaries
 ```
+pay_roll.sample(5)
+```
+![image](https://github.com/user-attachments/assets/b9efe5ec-f922-44d1-b29d-c10be8793404)
+
+
 
 
 
