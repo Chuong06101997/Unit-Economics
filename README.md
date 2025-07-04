@@ -209,5 +209,6 @@ Total:`1.7427548038913647`
 >While this indicates a positive return, it suggests there is room for improvement—either by reducing acquisition costs or increasing customer value.
 >The high gross margin (75.6%) shows healthy profitability after production costs, which supports further investment in customer acquisition if optimized.
 
->What Problem Was Solved?
+>What Problem Was Solved:
+
 >We quantified the balance between customer acquisition cost and customer value, helping the business make data-driven decisions on whether current marketing and retention strategies are financially sustainable >and profitable in the long term.
