@@ -46,6 +46,7 @@ lifespan = pd.read_excel(url, sheet_name='Sheet1')
 ```
 ## III. CALCULATION
 ---
+
 ### 1.CAC: Customer Acquisition Cost
 `CAC = [Total Sales and Marrketing Expenses] / [Number Of New Cusstomers Acquired]`
 
