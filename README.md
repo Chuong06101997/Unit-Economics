@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/063261b0-8158-4447-be50-d5482a2eabd3)
 
-## I . Introduction
+## I . <span style="color:blue">INTROCDUTION</span>
 
 The company is called "TechStream Solutions", and the product is a Software as a Service (SaaS) platform named "Streamline Pro". This platform provides comprehensive project management and collaboration tools for businesses of all sizes.
 
@@ -201,7 +201,7 @@ Total:`1.7427548038913647`
 
 >The LTV/CAC ratio is approximately 1.74, indicating that for every $1 spent on acquiring a customer, the business earns about $1.74 in customer lifetime value. This suggests moderate profitability, but there may be room to improve marketing efficiency or increase customer value.
 
-# IV.  CONCLUSION:
+# <span style="color:blue">IV.  CONCLUSION:</span>
 
 >The business generates an average of $2,115.65 from each customer over their lifecycle while spending $1,213.97 to acquire them, resulting in a moderate LTV/CAC ratio of 1.74.
 >While this indicates a positive return, it suggests there is room for improvement—either by reducing acquisition costs or increasing customer value.
