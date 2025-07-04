@@ -114,19 +114,20 @@ Total Revenue
 ```
 total_revenue = customer_recepts_202303['receipt_amount'].sum()
 ```
-=> `83033`
+ `83033`
 
 Number of Customer
 ```
 number_of_customer = customer_recepts_202303['customer_id'].nunique()
 ```
-=> `292`
+ `292`
 
 APRU
 ```
 ARPU = round(total_revenue/number_of_customer, 2)
 ```
-=> `284.36`
+ `284.36`
+=> We can understand that ARPU (Average Revenue Per User) is $284.36, meaning that on average, each customer generates $284.36 in revenue for the business. This metric helps evaluate how effectively the company earns revenue per customer and serves as a basis for comparing with CAC to assess the potential profitability of acquiring new customers.
 
 
 
