@@ -14,6 +14,7 @@ The datasets are in the shared folder on Google Drive:
 <https://drive.google.com/drive/folders/1qhOW9Y2orRXuzbX-kXEmuJ7TMQiRs2Uv?usp=drive_link>
 
 ## II. IMPORT
+---
 ### 1. Import Libraries and Data
 ```
 import pandas as pd
@@ -44,6 +45,7 @@ url = 'https://docs.google.com/spreadsheets/d/' + google_sheet_id + '/export?for
 lifespan = pd.read_excel(url, sheet_name='Sheet1')
 ```
 ## III. CALCULATION
+---
 ### 1.CAC: Customer Acquisition Cost
 `CAC = [Total Sales and Marrketing Expenses] / [Number Of New Cusstomers Acquired]`
 
@@ -206,7 +208,10 @@ Total:`1.7427548038913647`
 
 ## IV.  CONCLUSION:
 
+
 ![image](https://github.com/user-attachments/assets/9da9ab09-fe6f-4004-83a2-4214ad25f69a)
+
+---
 
 >The business generates an average of $2,115.65 from each customer over their lifecycle while spending $1,213.97 to acquire them, resulting in a moderate LTV/CAC ratio of 1.74.
 >While this indicates a positive return, it suggests there is room for improvement—either by reducing acquisition costs or increasing customer value.
