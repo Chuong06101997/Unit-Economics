@@ -51,7 +51,8 @@ CAC (Customer Acquisition Cost) is calculated by dividing the total Sales & Mark
 ```
 month_expense.sample(5)
 ```
-![image](https://github.com/user-attachments/assets/c318338e-bf9a-4e36-aa4f-1f9d5165cdb7)
+![image](https://github.com/user-attachments/assets/9905d816-cf4c-4b2f-b5bc-d2754847117b)
+
 
 ```
 expense_mar = monthly_expense[monthly_expense['month'] == '2023-03-01']
