@@ -11,7 +11,7 @@ TechStream Solutions has been operating for several years and has gathered signi
 The datasets are in the shared folder on Google Drive:
 <https://drive.google.com/drive/folders/1qhOW9Y2orRXuzbX-kXEmuJ7TMQiRs2Uv?usp=drive_link>
 
-## <span style="color:blue">II. IMPORT</span>
+## 🔹II. IMPORT
 ### 1. Import Libraries and Data
 ```
 import pandas as pd
