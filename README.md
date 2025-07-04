@@ -8,7 +8,8 @@ The company is called "TechStream Solutions", and the product is a Software as a
 
 TechStream Solutions has been operating for several years and has gathered significant data on their costs and revenues. They are now looking to analyze their unit economics to understand the profitability of Streamline Pro on a per-customer basis.
 
-The datasets are in the shared folder on Google Drive: <https://drive.google.com/drive/folders/1qhOW9Y2orRXuzbX-kXEmuJ7TMQiRs2Uv?usp=drive_link>
+The datasets are in the shared folder on Google Drive:
+<https://drive.google.com/drive/folders/1qhOW9Y2orRXuzbX-kXEmuJ7TMQiRs2Uv?usp=drive_link>
 
 ## II. IMPORT
 ### 1. Import Libraries and Data
@@ -199,3 +200,11 @@ Total:`9.841333333333333`
 Total:`1.7427548038913647`
 
 >The LTV/CAC ratio is approximately 1.74, indicating that for every $1 spent on acquiring a customer, the business earns about $1.74 in customer lifetime value. This suggests moderate profitability, but there may be room to improve marketing efficiency or increase customer value.
+
+# IV.  CONCLUSION:
+
+>The business generates an average of $2,115.65 from each customer over their lifecycle while spending $1,213.97 to acquire them, resulting in a moderate LTV/CAC ratio of 1.74.
+>While this indicates a positive return, it suggests there is room for improvement—either by reducing acquisition costs or increasing customer value.
+>The high gross margin (75.6%) shows healthy profitability after production costs, which supports further investment in customer acquisition if optimized.
+>What Problem Was Solved?
+>We quantified the balance between customer acquisition cost and customer value, helping the business make data-driven decisions on whether current marketing and retention strategies are financially sustainable >and profitable in the long term.
