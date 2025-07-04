@@ -40,8 +40,17 @@ google_sheet_id = '1by8tPHwOnq3uKYK2E7sA9VBUYoPM4p1Rnrm_Ss9cyHI'
 url = 'https://docs.google.com/spreadsheets/d/' + google_sheet_id + '/export?format=xlsx'
 lifespan = pd.read_excel(url, sheet_name='Sheet1')
 ```
+## III. CALCULATION
+### 1.CAC: Customer Acquisition Cost
+`CAC = [Total Sales and Marrketing Expenses] / [Number Of New Cusstomers Acquired]`
+CAC (Customer Acquisition Cost) is calculated by dividing the total Sales & Marketing expenses—including marketing software costs, salaries, and daily marketing spend—by the number of new customers acquired.
 
-
+### 1.1 Marketing Software Expense
+```
+expense_mar = monthly_expense[monthly_expense['month'] == '2023-03-01']
+expense_crm = expense_mar[expense_mar['item'] == 'Salesforce']['amount'].sum()
+expense_crm
+```
 
 
 
