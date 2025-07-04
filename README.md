@@ -133,9 +133,33 @@ ARPU = round(total_revenue/number_of_customer, 2)
 
 ### 3. COGS: Cost of Goods Sold
 `COGS = [Software Expenses] + [Production]`
-Software Expenses : Calculates the total software expenses for production (COGS) in March 2023, including AWS Hosting, Google Cloud Storage, and Atlassian Jira.
+
+`Software Expenses` : Calculates the total software expenses for production (COGS) in March 2023, including AWS Hosting, Google Cloud Storage, and Atlassian Jira.
 ```
 production_expense = ['AWS Hosting','Google Cloud Storage','Atlassian Jira']
 softwware_expense = expense_202303[expense_202303['item'].isin(production_expense)]['amount'].sum()
 ```
+Total : `14200`
+
+`Shared Expense `: When calculating COGS (Cost of Goods Sold), only the expenses directly related to production should be included. For shared software like Slack and Zoom—which are used across multiple departments—we allocate 60% of their total cost to COGS, assuming that portion supports production activities. The remaining 40% is considered indirect and not production-related. This allocation ensures the production cost is accurately reflected in financial reporting.
+```
+share_softwware = ['Slack','Zoom']
+share_softwware = expense_202303[expense_202303['item'].isin(share_softwware)]['amount'].sum() * 0.6
+```
+Total: `864.0`
+
+`Production Salarry`: The salary cost of the Engineering department in March is considered the Production Salary, as this department is directly involved in creating the product. Therefore, the entire salary amount is included in the COGS (Cost of Goods Sold).
+```
+production_salary = pay_roll_202303[pay_roll_202303['department'] == 'Engineering']['paid'].sum()
+```
+Total : `5200`
+
+COGS Calculation:
+`cogs = softwware_expense + share_softwware + production_salary`
+```
+Total : `20264.0`
+
+
+
+
 
