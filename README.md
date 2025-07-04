@@ -63,8 +63,13 @@ expense_crm = expense_mar[expense_mar['item'] == 'Salesforce']['amount'].sum()
 pay_roll.sample(5)
 ```
 ![image](https://github.com/user-attachments/assets/b9efe5ec-f922-44d1-b29d-c10be8793404)
-
-
-
+```
+pay_roll_202303 = pay_roll[pay_roll['month'] == '2023-03-01']
+sale_marketing_salary = pay_roll_202303[
+    (pay_roll['department'] == 'Sales') |
+    (pay_roll['department'] == 'Marketing')
+]['paid'].sum()
+```
+> The cost of Sales & Marketing Salaries is $5,950
 
 
