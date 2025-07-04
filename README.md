@@ -55,8 +55,9 @@ month_expense.sample(5)
 ```
 expense_mar = monthly_expense[monthly_expense['month'] == '2023-03-01']
 expense_crm = expense_mar[expense_mar['item'] == 'Salesforce']['amount'].sum()
-expense_crm
 ```
+> The cost of the Marketing Software Expense is $1,700.
+
 ### 1.2 Sales & Marketing Salaries
 ```
 
