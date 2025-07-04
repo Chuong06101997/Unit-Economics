@@ -98,6 +98,7 @@ customer_recepts_202303 = customer_recepts[(customer_recepts['date'] >= '2023-03
 new_of_customer = customer_recepts_202303[customer_recepts_202303['new_customer'] == 1]['customer_id'].nunique()
 ```
 >The number of new customers is 63.
+
 ### 1.5 CAC calculation
 ```
 total_acquition_cost = crm_expense + sale_marketing_salary + daily_marketing_expense
@@ -127,8 +128,14 @@ APRU
 ARPU = round(total_revenue/number_of_customer, 2)
 ```
  `284.36`
+ 
 => We can understand that ARPU (Average Revenue Per User) is $284.36, meaning that on average, each customer generates $284.36 in revenue for the business. This metric helps evaluate how effectively the company earns revenue per customer and serves as a basis for comparing with CAC to assess the potential profitability of acquiring new customers.
 
-
-
+### 3. COGS: Cost of Goods Sold
+`COGS = [Software Expenses] + [Production]`
+Software Expenses : Calculates the total software expenses for production (COGS) in March 2023, including AWS Hosting, Google Cloud Storage, and Atlassian Jira.
+```
+production_expense = ['AWS Hosting','Google Cloud Storage','Atlassian Jira']
+softwware_expense = expense_202303[expense_202303['item'].isin(production_expense)]['amount'].sum()
+```
 
