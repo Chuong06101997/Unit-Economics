@@ -109,16 +109,19 @@ We should consider: Is the value and long-term revenue from each new customer wo
 
 ### 2.  ARPU: Average Revenue Per User
 `APRU = [Total Revenue] / [Number of Users]`
+
 Total Revenue
 ```
 total_revenue = customer_recepts_202303['receipt_amount'].sum()
 ```
 => `83033`
+
 Number of Customer
 ```
 number_of_customer = customer_recepts_202303['customer_id'].nunique()
 ```
 => `292`
+
 APRU
 ```
 ARPU = round(total_revenue/number_of_customer, 2)
